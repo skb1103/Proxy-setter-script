@@ -6,14 +6,14 @@ import unset_function as usp
 # main function Taking argument from command line as {proxy} {port}
 def main():
     sys.argv
-    cmd = sys.argv[1]
+    cm = sys.argv[1]
 
-    if cmd=='set':
+    if cm=='set':
         proxy = sys.argv[2]
         port = sys.argv[3]
         sp.set_proxy(proxy,port)
 
-    elif cmd=='unset':
+    elif cm=='unset':
         usp.unset_proxy()
 
     else:
